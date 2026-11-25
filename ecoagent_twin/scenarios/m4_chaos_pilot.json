@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "id": "m4-chaos-supervisor-v1",
+  "traffic_seeds": [201, 202, 203, 204],
+  "chaos_kinds": ["locker_outage", "locker_saturation", "charger_outage", "road_blockage", "demand_surge", "compound"],
+  "case_seeds": {"moderate": 421, "severe": 422},
+  "deadline_jitter_min": 2,
+  "traffic_delay_max_min": 0,
+  "delay_energy_wh_per_min": 0,
+  "charger_rate_wh_per_min": 240,
+  "charger_capacity_wh": 2000,
+  "repair": {"time_limit_s": 0.35, "columns_per_vehicle": 512},
+  "supervisor_budget_s": 2.0
+}

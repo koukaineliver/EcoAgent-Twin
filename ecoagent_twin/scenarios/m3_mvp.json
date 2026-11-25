@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "id": "m3-matched-outage-mvp-v1",
+  "traffic_seeds": {
+    "training": [101, 102, 103, 104, 105, 106],
+    "validation": [111, 112],
+    "evaluation": [121, 122, 123, 124]
+  },
+  "case_seeds": {"training": [1, 2, 3], "validation": [11, 12], "evaluation": [21, 22]},
+  "deadline_jitter_min": 2,
+  "traffic_delay_max_min": 0,
+  "delay_energy_wh_per_min": 0,
+  "conditions": [
+    {"id": "locker_outage", "locker_capacity_caps": {}, "extra_battery_above_direct_return_wh": null},
+    {"id": "alternate_capacity_pressure", "locker_capacity_caps": {"west": 2, "north": 1}, "extra_battery_above_direct_return_wh": null},
+    {"id": "low_battery_at_outage", "locker_capacity_caps": {}, "extra_battery_above_direct_return_wh": 390}
+  ],
+  "charger_rate_wh_per_min": 240,
+  "charger_capacity_wh": 2000,
+  "training": {"seed": 131, "iterations": 12, "train_batch_size": 384},
+  "repair": {"time_limit_s": 0.35, "columns_per_vehicle": 512},
+  "supervisor_budget_s": 2.0
+}

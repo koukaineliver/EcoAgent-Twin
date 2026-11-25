@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "kind": "la_osmnx_new_policy_training",
+  "created_utc": "2026-11-25T04:01:02.639797+00:00",
+  "road_network_sha256": "75a2c208e8754907fd52adcf0a7ce3854b9f945b2017ba58e5321ecd2585b71e",
+  "frozen_sumo_checkpoint_sha256": "1faaebd91df600c80a429b73d4caec45a26dee19e8e224868efd63b127c74805",
+  "offer_protocol_sha256": "79fc68b860ab5b1355ac7c82ac8f6dc7f1518118eda322ce5d05442684bfbb18",
+  "sources": {
+    "la_policy_training.py": "f952ec04570cf695c1b4c6776a9c37fd6ba8d6abc3abbec1c92a6606bf4e1b07",
+    "la_controller_experiment.py": "c4794e6787e6b8f23747564091833c42acdd2a4cb7e45da3a4be5c9360607b20",
+    "m3_rllib.py": "7993edf5bc051d2d6cb95fdab785f38cb7e9909b9531ddcd59a276ac67b0166b",
+    "m2_simulator.py": "8cfa31a19941e4b2543fdc67108c7d48eb3cf1e6169df3e48dadb77a850aecf4",
+    "m1_benchmark.py": "46af179c0298ead26906313b54435b9e0ea861af679f5770d2037b1b91dcac23",
+    "m5_experiment.py": "6bda46ae0b6cdeb0e6dce702349eab12182fd28acb8e07f56eef0f07800205cd",
+    "m3_experiment.py": "4e576eeee521bf14f4b25e1da7ed1309a84e5c4e98a878d0dfafa6c31f0353a9",
+    "model.py": "e021cd360e73c90384787fb107f13873cd01db1151bb6d3d6cc0dd5b7b63fcec"
+  },
+  "sha256": {
+    "policy.pt": "8918ad7af316c450ff28a5adf62ded3196013482130c2623e073287f16d2d2c1",
+    "training.json": "70493e522142ca9e00e6e931df38ae07256960475ff37a8146d220dbb5eb7ccd",
+    "protocol.json": "2da28c6257ec97fa10f100beeb245f33d3cc0ea71089a4cdd78b7f4c6354bba1",
+    "base_scenario.json": "13eeafef57dad942b9ec926806558ee636854ed96c327abb2fa6e702da40f91a",
+    "heldout.jsonl": "2c787f0f185617801aa3e1b684e28dd3a9776b3e39701ba92ef48413fe922155",
+    "summary.json": "8f9d026b12586ea408241516c417990f6bbb20a7c001b2bf3c8658c91d16cfea"
+  }
+}

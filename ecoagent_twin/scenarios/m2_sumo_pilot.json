@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "id": "m2-sumo-outages-v1",
+  "days": [221, 222, 223, 224],
+  "seeds": [41, 42, 43, 44, 45, 46],
+  "deadline_jitter_min": 2,
+  "traffic_delay_max_min": 0,
+  "delay_energy_wh_per_min": 0,
+  "conditions": [
+    {"id": "locker_outage", "locker_capacity_caps": {}, "extra_battery_above_direct_return_wh": null},
+    {"id": "alternate_capacity_pressure", "locker_capacity_caps": {"west": 2, "north": 1}, "extra_battery_above_direct_return_wh": null},
+    {"id": "low_battery_at_outage", "locker_capacity_caps": {}, "extra_battery_above_direct_return_wh": 390}
+  ],
+  "charger_rate_wh_per_min": 240,
+  "charger_capacity_wh": 2000
+}

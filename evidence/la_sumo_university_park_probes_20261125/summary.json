@@ -1,0 +1,68 @@
+{
+  "completed_electric_probes": 84,
+  "identical_sumo_route_pairs_across_profiles": 41,
+  "imported_delivery_edges": 4107,
+  "osm_sites": {
+    "central": {
+      "edge_positions_m": {},
+      "osm_node_id": "9753026970",
+      "placement": "junction"
+    },
+    "depot": {
+      "edge_positions_m": {
+        "326418959#2": 76.5073
+      },
+      "osm_node_id": "1673648390",
+      "placement": "edge_interior"
+    },
+    "east": {
+      "edge_positions_m": {},
+      "osm_node_id": "2613117879",
+      "placement": "junction"
+    },
+    "north": {
+      "edge_positions_m": {},
+      "osm_node_id": "6808195844",
+      "placement": "junction"
+    },
+    "start-1": {
+      "edge_positions_m": {},
+      "osm_node_id": "6813379426",
+      "placement": "junction"
+    },
+    "start-2": {
+      "edge_positions_m": {},
+      "osm_node_id": "4015423964",
+      "placement": "junction"
+    },
+    "west": {
+      "edge_positions_m": {},
+      "osm_node_id": "9749944410",
+      "placement": "junction"
+    }
+  },
+  "profiles": {
+    "heavy_traffic": {
+      "complete": 42,
+      "mean_osmnx_modeled_wh": 184.04761904761904,
+      "mean_osmnx_seconds": 82.64801542857143,
+      "mean_sumo_consumed_wh": 346.0573809523809,
+      "mean_sumo_seconds": 95.38095238095238,
+      "median_abs_distance_difference_m": 7.4804999999999495,
+      "same_osm_way": 33
+    },
+    "light_traffic": {
+      "complete": 42,
+      "mean_osmnx_modeled_wh": 183.5952380952381,
+      "mean_osmnx_seconds": 58.90222269047619,
+      "mean_sumo_consumed_wh": 345.75666666666666,
+      "mean_sumo_seconds": 94.69047619047619,
+      "median_abs_distance_difference_m": 6.757499999999993,
+      "same_osm_way": 34
+    }
+  },
+  "route_geometry_count": {
+    "same_osm_way": 67,
+    "sumo_legal_alternative": 17
+  }
+}

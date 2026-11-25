@@ -1,0 +1,503 @@
+{
+  "algorithm": "sha256",
+  "members": {
+    ".gitattributes": {
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    ".gitignore": {
+      "bytes": 45,
+      "sha256": "07f0b97a5b5b204e9ec95ef3ccae0c2a3ffaa5288458023815a19ac042e17557"
+    },
+    ".zenodo.json": {
+      "bytes": 575,
+      "sha256": "cb23e3e033d6f01f98a8bc9990caf26fda3a91346cd335e55e1644d4797be9da"
+    },
+    "CITATION.cff": {
+      "bytes": 418,
+      "sha256": "ee9aa8f6c80c447d86026ef4928e3b8c59f82fada01639eabcaa01b10e9429a6"
+    },
+    "LICENSE": {
+      "bytes": 1083,
+      "sha256": "f855a4f3c0a74918e24a3fc1eb19f9c99485bbdda5f422814a5de7e2eb4de47b"
+    },
+    "README.md": {
+      "bytes": 6579,
+      "sha256": "d0c8f2a0edb632369ca654f08cdbbbc823b9e40f9cd74f732fa855288651bd74"
+    },
+    "THIRD_PARTY.md": {
+      "bytes": 769,
+      "sha256": "c61b8eadc92fcd2dd2aa5b5fe8644e5000243d0342642fae731fe723a15f6267"
+    },
+    "ecoagent_twin/__init__.py": {
+      "bytes": 63,
+      "sha256": "7dd96ebe49e5b79dde2bc1acdbdcce1cace3a14fc285c8078a899159815526bd"
+    },
+    "ecoagent_twin/__main__.py": {
+      "bytes": 4593,
+      "sha256": "bc57eae686a12096146e961ae90eb7b997e007e3bab39fa0a76d86e97db627ee"
+    },
+    "ecoagent_twin/controllers.py": {
+      "bytes": 7705,
+      "sha256": "f854db0f66d8b4c92787b2fb35b422421faeca8aedfd276b7340cc781d440099"
+    },
+    "ecoagent_twin/empirical_amazon.py": {
+      "bytes": 8210,
+      "sha256": "576c2ce7dcb10425b780081365ea8b0c763609af01488c2b86bb592e3ca90140"
+    },
+    "ecoagent_twin/empirical_energy.py": {
+      "bytes": 4351,
+      "sha256": "abca44b2ebe3aea7013f334bce1a1c151cd774289a37830e6f26252e95ce2bfe"
+    },
+    "ecoagent_twin/la_controller_experiment.py": {
+      "bytes": 27573,
+      "sha256": "c4794e6787e6b8f23747564091833c42acdd2a4cb7e45da3a4be5c9360607b20"
+    },
+    "ecoagent_twin/la_decision_xai.py": {
+      "bytes": 7626,
+      "sha256": "f94dde4605640de7d261d8556ddf01f44281af285a1ac04ab955ad5091ed4c39"
+    },
+    "ecoagent_twin/la_empirical_road_inputs.py": {
+      "bytes": 5246,
+      "sha256": "f8a09b2a6d943c31131f4cc8c9844ba49bdbb4b0638d52825090650f3159c1a2"
+    },
+    "ecoagent_twin/la_hub_charging.py": {
+      "bytes": 5845,
+      "sha256": "c96ddd26e210b592e1322493c1935eb718dde478f4eb467adb7e43b2f69228d1"
+    },
+    "ecoagent_twin/la_osmnx.py": {
+      "bytes": 13442,
+      "sha256": "a8370e57f8a38f8d8a86926eb9fac174646f263764fb8db6d3544d79842a0f07"
+    },
+    "ecoagent_twin/la_policy_training.py": {
+      "bytes": 11337,
+      "sha256": "f952ec04570cf695c1b4c6776a9c37fd6ba8d6abc3abbec1c92a6606bf4e1b07"
+    },
+    "ecoagent_twin/la_solver_independence.py": {
+      "bytes": 8131,
+      "sha256": "5a9519205bd7b1ee1b9602d364d4e728d3e46d68e5bd1f419c04af627bab4781"
+    },
+    "ecoagent_twin/la_sumo.py": {
+      "bytes": 21966,
+      "sha256": "982bc562576d96a0e012bbd27d05bd1cfd52fe41943aca3a6cd1145499731281"
+    },
+    "ecoagent_twin/m1_benchmark.py": {
+      "bytes": 13712,
+      "sha256": "46af179c0298ead26906313b54435b9e0ea861af679f5770d2037b1b91dcac23"
+    },
+    "ecoagent_twin/m2_customer_mesa.py": {
+      "bytes": 1086,
+      "sha256": "57a8f7545446f213edede53686a18852e4208f9d5a9bd85c4b34ddfeb50bad3a"
+    },
+    "ecoagent_twin/m2_experiment.py": {
+      "bytes": 15242,
+      "sha256": "0d69167493e8cadb724af46abf729a9982aea42d14c7f674e4ed5dbfd9debe3b"
+    },
+    "ecoagent_twin/m2_mappo.py": {
+      "bytes": 11958,
+      "sha256": "f3dc7c424abc1c9d8f67a8fa040f4ca980574ed39af3dc92457887d1ad424949"
+    },
+    "ecoagent_twin/m2_offer_allocator.py": {
+      "bytes": 5163,
+      "sha256": "e573cf86ca74e9e69d70503302fb8f2ebd1137930b797050b30a6f5089b01904"
+    },
+    "ecoagent_twin/m2_offer_experiment.py": {
+      "bytes": 17208,
+      "sha256": "ed8b55d65e8bc7b88303272479361aaa6ea183bf0570ca3717d797ba52c9b570"
+    },
+    "ecoagent_twin/m2_offers.py": {
+      "bytes": 10170,
+      "sha256": "51c0d5c1bb214e44e2c0b92cc9c7882c80883406286479505db2dde1cc514a44"
+    },
+    "ecoagent_twin/m2_rule.py": {
+      "bytes": 1698,
+      "sha256": "71adc2528f8ab3c93c0b99e5f7a545342453323697e8e1889694b2a0732ae71d"
+    },
+    "ecoagent_twin/m2_simulator.py": {
+      "bytes": 17363,
+      "sha256": "8cfa31a19941e4b2543fdc67108c7d48eb3cf1e6169df3e48dadb77a850aecf4"
+    },
+    "ecoagent_twin/m2_sumo_bridge.py": {
+      "bytes": 2527,
+      "sha256": "48627122a5a6557a7de9a830d12e607c04c34e4f5187edef6668111a57d636b0"
+    },
+    "ecoagent_twin/m2_sumo_experiment.py": {
+      "bytes": 15431,
+      "sha256": "b37dad267d6eb9e6ca928cc1e669b47f6165ae0d5a5138b6009e073094135a48"
+    },
+    "ecoagent_twin/m2_sumo_network.py": {
+      "bytes": 6358,
+      "sha256": "5309f2c71067c25ac4cae191cc561330043914b8dae0786ca946ae721c6aa635"
+    },
+    "ecoagent_twin/m2_sumo_runner.py": {
+      "bytes": 9625,
+      "sha256": "9c55052a14dec0251a915ecc70acba88faa47f9381024c6214f6e247efa51a71"
+    },
+    "ecoagent_twin/m3_cases.py": {
+      "bytes": 6518,
+      "sha256": "c64882e02cde0b5dc2ac6d0c5244d0ce936a9c5172c34f935bb17f5a82f5f08a"
+    },
+    "ecoagent_twin/m3_experiment.py": {
+      "bytes": 18157,
+      "sha256": "4e576eeee521bf14f4b25e1da7ed1309a84e5c4e98a878d0dfafa6c31f0353a9"
+    },
+    "ecoagent_twin/m3_local_model.py": {
+      "bytes": 4068,
+      "sha256": "596873b1f73099fb6650c135d438ad6e841884074c472eaba9ef691b8d68a16b"
+    },
+    "ecoagent_twin/m3_model_assets.py": {
+      "bytes": 3414,
+      "sha256": "d245968e48d2c5b5f953c93b98624a022f66a525efb9d92fe3a3c429515ffed7"
+    },
+    "ecoagent_twin/m3_rllib.py": {
+      "bytes": 12373,
+      "sha256": "7993edf5bc051d2d6cb95fdab785f38cb7e9909b9531ddcd59a276ac67b0166b"
+    },
+    "ecoagent_twin/m3_route_repair.py": {
+      "bytes": 15179,
+      "sha256": "4b04c2f91c3388c5b71d6cc88a51a7f5612339284332209655a41d77ca8dc62f"
+    },
+    "ecoagent_twin/m3_supervisor.py": {
+      "bytes": 8771,
+      "sha256": "e08fa2bd88f709ab381b45f0624079924b3f8e4703e349d5906b9e801c660f41"
+    },
+    "ecoagent_twin/m4_chaos.py": {
+      "bytes": 8288,
+      "sha256": "b27b78f6f6a6c3a31e9510c675461acb5fd7fde7565fedaf9addff1a4969b55c"
+    },
+    "ecoagent_twin/m4_corpus.py": {
+      "bytes": 4183,
+      "sha256": "97440bbf2648acb5f88cf39b3d4ac23e63e840422df55d3d70324e388533ce31"
+    },
+    "ecoagent_twin/m4_experiment.py": {
+      "bytes": 18356,
+      "sha256": "7d4a583d079a4b57dd4e5a10d8d076c8266ad34e5abd33bd8742c68473572c61"
+    },
+    "ecoagent_twin/m4_model_xai.py": {
+      "bytes": 9781,
+      "sha256": "4ac91689621f056ae6b60d6824a214350a2638aa4be678ae32f05fe13b3d2265"
+    },
+    "ecoagent_twin/m4_xai.py": {
+      "bytes": 21704,
+      "sha256": "12002110c84ba22aad78a118da88d5c752fa7b5e50d2e746e3a029d596dafb38"
+    },
+    "ecoagent_twin/m4_xai_viewer.py": {
+      "bytes": 13990,
+      "sha256": "77d1d433ec3166787499a362899793417dc18b58e55a003cdbb8235494c5a9a7"
+    },
+    "ecoagent_twin/m5_deadline.py": {
+      "bytes": 9066,
+      "sha256": "a0e3caf618da89e8a867f54b86db1739ee3e03076edc57a40da5a3069b25795d"
+    },
+    "ecoagent_twin/m5_experiment.py": {
+      "bytes": 22269,
+      "sha256": "6bda46ae0b6cdeb0e6dce702349eab12182fd28acb8e07f56eef0f07800205cd"
+    },
+    "ecoagent_twin/m5_local_model.py": {
+      "bytes": 4532,
+      "sha256": "557025fd0c5b5180819680cfd8f09000de4fd854c3ff6cc24f211d270a00f07e"
+    },
+    "ecoagent_twin/m5_model_audit.py": {
+      "bytes": 9463,
+      "sha256": "a55f328b2ee16a668f5b5c9c8886fd93beed892a09cef80ef005acbfe3800e49"
+    },
+    "ecoagent_twin/m5_scale.py": {
+      "bytes": 4961,
+      "sha256": "97d30b7f77f4dfcef95b79fa61caebc644b4c461d316e5ac0bcf945fc22729ed"
+    },
+    "ecoagent_twin/m6_context_tools.py": {
+      "bytes": 19683,
+      "sha256": "24c9f87450fc582afd2adaf1a59e4e86ca27713913107056a6df3ca55c1ffa15"
+    },
+    "ecoagent_twin/m6_decision_xai.py": {
+      "bytes": 23130,
+      "sha256": "d631bbc73a54574b4c1bf3622e69b1030488e4512b5e5468876850f94cc836a0"
+    },
+    "ecoagent_twin/m6_dynamic_grid.py": {
+      "bytes": 17007,
+      "sha256": "65e7eb64751f85d2437de7995ed9b23bc233294d491789dc43b2bf4be05a167e"
+    },
+    "ecoagent_twin/m6_empirical_benchmark.py": {
+      "bytes": 31429,
+      "sha256": "c50fe0cebb6a102517d7c2b3cda4c4374c7e50177d2e0bcb00bdb2b6c9d0f1ae"
+    },
+    "ecoagent_twin/m6_gnn.py": {
+      "bytes": 16597,
+      "sha256": "6105c5e11232a575c39f93e8bcd5dee75c09ec42ab144f9136e9c835f7d1a7df"
+    },
+    "ecoagent_twin/m6_hub_charging.py": {
+      "bytes": 12349,
+      "sha256": "66e3a7fc8b4edc0df91ded8097febf52b0372925e8e02c4f82f5c0d49ce1d16d"
+    },
+    "ecoagent_twin/m6_hub_charging_experiment.py": {
+      "bytes": 15646,
+      "sha256": "f7a21bca44a476b2922a7198234cf386b8969bc66e7f581795e0c0a54159d1ab"
+    },
+    "ecoagent_twin/m6_incentive.py": {
+      "bytes": 10435,
+      "sha256": "8e5c0dde38628673753b4df65f13b2da8c39697db8243243660f460aaa6741e2"
+    },
+    "ecoagent_twin/m6_incentive_experiment.py": {
+      "bytes": 10597,
+      "sha256": "51c98dccb0415f6638f9bf69e0004c5dad94b7d56ad69fff30a207aadb682340"
+    },
+    "ecoagent_twin/m6_predictive_routing.py": {
+      "bytes": 18989,
+      "sha256": "bbb8440d8d192ff4806c18a2823e9dbb678fb0e3eaf4f5b1407cfdaae4dab2e5"
+    },
+    "ecoagent_twin/m6_recipient_dialogue.py": {
+      "bytes": 8882,
+      "sha256": "837f277f2b8f52ea5f567108a00ab7dd7b88c0c5dfcfbc58e32d72b405b54218"
+    },
+    "ecoagent_twin/m6_solver.py": {
+      "bytes": 5977,
+      "sha256": "f20ee18e808b16511c6d033a200462df230bef922e8f4c5cfdd9615d2169e99a"
+    },
+    "ecoagent_twin/m6_solver_experiment.py": {
+      "bytes": 11070,
+      "sha256": "cc5cc98cc2bce134587704d8d6eb392638e3b0ee9ccee8dd1485c044de3601e9"
+    },
+    "ecoagent_twin/model.py": {
+      "bytes": 7655,
+      "sha256": "e021cd360e73c90384787fb107f13873cd01db1151bb6d3d6cc0dd5b7b63fcec"
+    },
+    "ecoagent_twin/replay.py": {
+      "bytes": 2976,
+      "sha256": "159a558cec8279ce83562992d389cd15f2b50bb39377bcf1995b397ef9afcb8e"
+    },
+    "ecoagent_twin/scenarios/locker_outage.json": {
+      "bytes": 2804,
+      "sha256": "00ef9bf310c89627fb1716b55eb4295d339450a13cd06c69a87a92b970cad995"
+    },
+    "ecoagent_twin/scenarios/m1_benchmark.json": {
+      "bytes": 643,
+      "sha256": "afcb7042a3aa65b4892c87e581f8f77332c04466870b699314a7dffcf1463fec"
+    },
+    "ecoagent_twin/scenarios/m2_offers.json": {
+      "bytes": 1572,
+      "sha256": "79fc68b860ab5b1355ac7c82ac8f6dc7f1518118eda322ce5d05442684bfbb18"
+    },
+    "ecoagent_twin/scenarios/m2_outages.json": {
+      "bytes": 1030,
+      "sha256": "cc367f89a84fbc3e80f30e0287893232bee37749a36baaeba4823700c9a8400d"
+    },
+    "ecoagent_twin/scenarios/m2_sumo_pilot.json": {
+      "bytes": 645,
+      "sha256": "8ae5b980cbf0ac9aebd315a9ceadc0cef34dc209729a8423ce124c6749a45f3d"
+    },
+    "ecoagent_twin/scenarios/m3_mvp.json": {
+      "bytes": 980,
+      "sha256": "c2e01666099ec124d9a37f3f8320d659fb76608eb2adac7124eb9e757531788e"
+    },
+    "ecoagent_twin/scenarios/m4_chaos_pilot.json": {
+      "bytes": 512,
+      "sha256": "603a1b0cf51ea195420822f1e6fc0b80cebd453bceebec958402687fae0e6b1d"
+    },
+    "ecoagent_twin/scenarios/m5_campaign.json": {
+      "bytes": 720,
+      "sha256": "c05c4813943c0c5c3a446cf410de57b8eca8cbb0c2c4b445a5687c39442248b0"
+    },
+    "evidence/comparison.csv": {
+      "bytes": 525754,
+      "sha256": "77dfa68d2e292e7cd3c6ab5694a9dd634624bc837d90b443a096c9b0bb8b1c77"
+    },
+    "evidence/la_osmnx_controller_colocated_20261125/comparison.csv": {
+      "bytes": 333617,
+      "sha256": "446258bb9584dad973052f5bf672d501ab977f3483923bb9700eb2fa80b6014d"
+    },
+    "evidence/la_osmnx_controller_colocated_20261125/summary.json": {
+      "bytes": 53118,
+      "sha256": "8dd302a1a593bd15d9987afe8b8f9f5a1abda22fc33c0e68f42024d8b51d8029"
+    },
+    "evidence/la_osmnx_controller_distinct_20261125/comparison.csv": {
+      "bytes": 333407,
+      "sha256": "1576ccc061c2f0066a70fc255e6df91b027390f4095f933db8bc6f7815a6ee10"
+    },
+    "evidence/la_osmnx_controller_distinct_20261125/summary.json": {
+      "bytes": 53168,
+      "sha256": "75a38e7261dbf44ee32a7a05287adeb0449116991e45d548a36adcd059114da9"
+    },
+    "evidence/la_osmnx_decision_xai_20261125.json": {
+      "bytes": 286095,
+      "sha256": "d65c93347ebcadf22ceb837f63ded99c1e686bdfac0cab62b12f29feaf6b4319"
+    },
+    "evidence/la_osmnx_live_cases_20261125/comparison.csv": {
+      "bytes": 3636,
+      "sha256": "62c7cacfe09a14c0e9aaed79d05db14f3fe5ab6a6cdbd7f5692a2544650453cb"
+    },
+    "evidence/la_osmnx_m6_incentive_20261125/summary.json": {
+      "bytes": 1819,
+      "sha256": "bb8d8bbdcf6fc6a3d9f757b6fd6e209db8a8356f3ac3e5eed2a4fe37b85fe460"
+    },
+    "evidence/la_osmnx_rllib_retrain_20261125/manifest.json": {
+      "bytes": 1712,
+      "sha256": "880b0dc6337e4811d98676b3b5ff253e0e81e2ab1c02e0b3f30e65f39ff30b9c"
+    },
+    "evidence/la_osmnx_rllib_retrain_20261125/policy.pt": {
+      "bytes": 47871,
+      "sha256": "8918ad7af316c450ff28a5adf62ded3196013482130c2623e073287f16d2d2c1"
+    },
+    "evidence/la_osmnx_rllib_retrain_20261125/summary.json": {
+      "bytes": 1646,
+      "sha256": "8f9d026b12586ea408241516c417990f6bbb20a7c001b2bf3c8658c91d16cfea"
+    },
+    "evidence/la_osmnx_rllib_retrain_20261125/training.json": {
+      "bytes": 4980,
+      "sha256": "70493e522142ca9e00e6e931df38ae07256960475ff37a8146d220dbb5eb7ccd"
+    },
+    "evidence/la_osmnx_solver_independence_20261125.json": {
+      "bytes": 1248901,
+      "sha256": "c7bb4afcfa3c51fc65b407d002779960023085eb3c4d369056b2e26c8ffcd2f3"
+    },
+    "evidence/la_sumo_university_park_probes_20261125/comparison.csv": {
+      "bytes": 8103,
+      "sha256": "8249c33224270d8a91177af10e841b2dbba1f98822268603c1004e3c2d965851"
+    },
+    "evidence/la_sumo_university_park_probes_20261125/summary.json": {
+      "bytes": 1787,
+      "sha256": "e3bdaf13665fb4882131e0b4c47a16abaa8bbc5e09008a9e5f96be1e2ac743ed"
+    },
+    "evidence/summary.json": {
+      "bytes": 34738,
+      "sha256": "59daf3234a6efc7767aaf191016ec6c4a20878ea4881e40363eeee351b7e045b"
+    },
+    "requirements-la-roads.txt": {
+      "bytes": 41,
+      "sha256": "556cc1b703384797ff49dee38669857e64f1d0da1e35618a2a0c7c3904864ba8"
+    },
+    "requirements-m2-offers.txt": {
+      "bytes": 31,
+      "sha256": "d878054e615ab9b88e69c2306c6b08aee1573226753520e2da9dc1145afdfd66"
+    },
+    "requirements-m2-sumo.txt": {
+      "bytes": 39,
+      "sha256": "e9a84cede0b56f7f42d7673494db9c7025cd0f2c76cfbfad86b3b4dcef301068"
+    },
+    "requirements-m3.txt": {
+      "bytes": 89,
+      "sha256": "8be79592a62070c71e63486f26c688281f452fa39f0097b2432ba1aa4fcc71ca"
+    },
+    "runs/osmnx_la_university_park/LICENSE-OSM.txt": {
+      "bytes": 203,
+      "sha256": "bba516702e7d99cdb53c428f57b14abf75fae06a2fb3e7c310347833555ac68e"
+    },
+    "runs/osmnx_la_university_park/osm_small.osm": {
+      "bytes": 12295755,
+      "sha256": "2c2471057f2a40d2f7118b68a9182a3346c1c373890144ade1b9e295a5db5c1e"
+    },
+    "runs/osmnx_la_university_park/osm_small.source.json": {
+      "bytes": 399,
+      "sha256": "df2b14b9ee4a9a2b66319640ab0137a602b748914b63498a1a55df995f30ee27"
+    },
+    "runs/osmnx_la_university_park/road_network.json": {
+      "bytes": 155660,
+      "sha256": "75a2c208e8754907fd52adcf0a7ce3854b9f945b2017ba58e5321ecd2585b71e"
+    },
+    "runs/osmnx_la_university_park/road_network_scale.json": {
+      "bytes": 1329659,
+      "sha256": "8cec669c703e946876965582253a8167e0e797b57b59d2693fc5628e903cbbbc"
+    },
+    "study_rebuild/future_transport/__init__.py": {
+      "bytes": 81,
+      "sha256": "0922bd4c3ac3db28b2c14aa5d0966a86008c6dcaafe26972abf585e7d0869c6e"
+    },
+    "study_rebuild/future_transport/data.py": {
+      "bytes": 14091,
+      "sha256": "c4c3008d400e1223205d7ea9692d1caa7cb895611a8a4112e68f4a9e747a61d9"
+    },
+    "study_rebuild/real_roads/__init__.py": {
+      "bytes": 81,
+      "sha256": "dbf214b8710529941702ed6accba7762bca4acecd078308bafc9729373f0385a"
+    },
+    "study_rebuild/real_roads/acquire.py": {
+      "bytes": 2729,
+      "sha256": "2313542171b51dd38ff2f1d35b5da6b40d80e9e8b7766bee4857d7caf9cfb7fb"
+    },
+    "study_rebuild/real_roads/roads.py": {
+      "bytes": 19656,
+      "sha256": "838e9ed880845d34f237e7630ef934c5619f655318ff9510812b451ba07865f6"
+    },
+    "tests/test_m1_benchmark.py": {
+      "bytes": 2887,
+      "sha256": "f549ee66e8915152945b0aff28274eeb081cc6438f7f9a32160288d5217950f3"
+    },
+    "tests/test_m2_experiment.py": {
+      "bytes": 1699,
+      "sha256": "548e8e6d1aeae27420df41d43934a8929ae5a6d45d6f43d62de882c54639ed0d"
+    },
+    "tests/test_m2_offer_experiment.py": {
+      "bytes": 2554,
+      "sha256": "6f570fa69a979c91e5b59a77d42673bf6c1fd8620566c90f593c6a4cebbb2032"
+    },
+    "tests/test_m2_offer_slots.py": {
+      "bytes": 5967,
+      "sha256": "b28dba1aa423bb2c7480befd7bdd9cebaebc1797b6d6f2e0ab379d927eca4aac"
+    },
+    "tests/test_m2_offers.py": {
+      "bytes": 5471,
+      "sha256": "a8a3b9c682871c215f5b5616777c5d86cf908695e2c6402a62052c6cf82ed306"
+    },
+    "tests/test_m2_simulator.py": {
+      "bytes": 6980,
+      "sha256": "08bf0b9c92f843c2d741f9865db3d7dc99e71a34b1a14c0f288d31849387176e"
+    },
+    "tests/test_m2_sumo_bridge.py": {
+      "bytes": 4950,
+      "sha256": "95889929f075630e41f249e2aede294dbb630d809a4e7d8f9e64d943be0a6794"
+    },
+    "tests/test_m2_sumo_experiment.py": {
+      "bytes": 2328,
+      "sha256": "26468ca4bb344b369d0296ec3167e42c4185442de8518dce01caa80c4c8e6876"
+    },
+    "tests/test_m3_route_repair.py": {
+      "bytes": 5359,
+      "sha256": "4d75da56f9d5e33379a70a5b4d79f0c651ab0012f89e76c7350dc9f99fea8ef7"
+    },
+    "tests/test_m3_supervisor.py": {
+      "bytes": 5215,
+      "sha256": "6ef8ca55f09824cf7e4db98fe9b28414191b8a07744e44865c0f54908c54885a"
+    },
+    "tests/test_m4_chaos.py": {
+      "bytes": 5753,
+      "sha256": "3a226972fe9f37d2fe00c57fecea1d00e288f285f8393f6efe5ba9f07af2823c"
+    },
+    "tests/test_m4_xai.py": {
+      "bytes": 9281,
+      "sha256": "f856107486f0cbc6bba6d361c7bb0fc3f96b19519668861b516ce8a083053abe"
+    },
+    "tests/test_m5_deadline.py": {
+      "bytes": 6723,
+      "sha256": "215a0664582def49510f2c220beacd07b9d080e94586a22a69bc837db88d18e2"
+    },
+    "tests/test_m5_scale.py": {
+      "bytes": 4645,
+      "sha256": "d2d890a5ffda0e64a303e5ccbb5711e4679deed3b5be332a87265aebdad76a9c"
+    },
+    "tests/test_m6_context_tools.py": {
+      "bytes": 5566,
+      "sha256": "f16e51a932e28ae2f33b9ff9dee51caef940f88e6304a81df21b4f6bde47b44a"
+    },
+    "tests/test_m6_decision_xai.py": {
+      "bytes": 6325,
+      "sha256": "104eb79bb72602b6994989931631ed43fd1828b0f62d7ba4f1172595b2fe747d"
+    },
+    "tests/test_m6_dynamic_grid.py": {
+      "bytes": 1948,
+      "sha256": "7f7aab97efb947c97a13854cd758577126269dfbcb567309b844e645ac25141f"
+    },
+    "tests/test_m6_empirical.py": {
+      "bytes": 4337,
+      "sha256": "74df3dee92e5933fdd5bde687a42bc81d87d185eb892d8014e41978089ed7606"
+    },
+    "tests/test_m6_hub_charging.py": {
+      "bytes": 6880,
+      "sha256": "849e8116ebe99e08a6bb9168224226ce56ff4b44c348684e2742c6ccb047414e"
+    },
+    "tests/test_outage_replay.py": {
+      "bytes": 2485,
+      "sha256": "4aca61cd08e834651e1e6e7d0bea4ad2d9fed8916b68c4cc02184bbdc7ed3721"
+    }
+  },
+  "schema": 1,
+  "version": "0.4.0"
+}

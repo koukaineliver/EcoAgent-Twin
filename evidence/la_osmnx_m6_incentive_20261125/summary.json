@@ -1,0 +1,61 @@
+{
+  "cases": 96,
+  "arm_episodes": 384,
+  "basis": "Actual University Park OSM road distances with modeled EV traffic and customer preferences",
+  "total_credit_scope": "Same 400-cent cap per case; spent amounts are simulated",
+  "by_arm": {
+    "no_offer": {
+      "issued": 0,
+      "accepted": 0,
+      "reassignments": 0,
+      "spent_cents": 0,
+      "followup_issued": 0,
+      "followup_accepted": 0,
+      "modeled_acceptances_per_offer": null,
+      "episodes": 96,
+      "served": 222,
+      "mean_on_time_service": 0.3854166666666667
+    },
+    "fixed": {
+      "issued": 192,
+      "accepted": 108,
+      "reassignments": 108,
+      "spent_cents": 21600,
+      "followup_issued": 0,
+      "followup_accepted": 0,
+      "modeled_acceptances_per_offer": 0.5625,
+      "episodes": 96,
+      "served": 299,
+      "mean_on_time_service": 0.5190972222222222
+    },
+    "personalized": {
+      "issued": 224,
+      "accepted": 106,
+      "reassignments": 106,
+      "spent_cents": 15500,
+      "followup_issued": 0,
+      "followup_accepted": 0,
+      "modeled_acceptances_per_offer": 0.4732142857142857,
+      "episodes": 96,
+      "served": 302,
+      "mean_on_time_service": 0.5243055555555556
+    },
+    "adaptive": {
+      "issued": 311,
+      "accepted": 117,
+      "reassignments": 117,
+      "spent_cents": 17700,
+      "followup_issued": 87,
+      "followup_accepted": 11,
+      "modeled_acceptances_per_offer": 0.3762057877813505,
+      "episodes": 96,
+      "served": 308,
+      "mean_on_time_service": 0.5347222222222222
+    }
+  },
+  "road_basis": {
+    "sha256": "75a2c208e8754907fd52adcf0a7ce3854b9f945b2017ba58e5321ecd2585b71e",
+    "provider": "© OpenStreetMap contributors",
+    "pickup": "Directed shared-road round trip at an assumed effective 4.5 km/h. Costs use the prior assumptions."
+  }
+}

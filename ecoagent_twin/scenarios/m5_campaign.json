@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "id": "m5-matched-ablation-and-scale-v1",
+  "traffic_seeds": [301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316],
+  "scale_traffic_seeds": [301, 306, 311, 316],
+  "fleet_sizes": [2, 4, 8],
+  "chaos_kinds": ["locker_outage", "locker_saturation", "charger_outage", "road_blockage", "demand_surge", "compound"],
+  "case_seeds": {"moderate": 421, "severe": 422},
+  "deadline_jitter_min": 2,
+  "traffic_delay_max_min": 0,
+  "delay_energy_wh_per_min": 0,
+  "charger_rate_wh_per_min": 240,
+  "charger_capacity_wh": 2000,
+  "repair": {"time_limit_s": 0.35, "columns_per_vehicle": 512},
+  "supervisor_budget_s": 2.0,
+  "model_fallback_reserve_s": 0.1,
+  "model_torch_threads": 2
+}

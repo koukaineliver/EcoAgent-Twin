@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this version."
+type: software
+title: "EcoAgent-Twin"
+version: "0.4.0"
+license: MIT
+authors:
+  - family-names: Ejjanfi
+    given-names: "Mohamed-Ali"
+    affiliation: "LARILE, ENSEM, Université Hassan II de Casablanca"
+keywords:
+  - last-mile delivery
+  - parcel lockers
+  - disruption recovery
+  - route repair
+  - multi-agent reinforcement learning

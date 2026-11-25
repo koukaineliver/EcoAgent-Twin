@@ -1,0 +1,1779 @@
+{
+  "population": "synthetic parcels, recipients, shocks and speed profiles, same real OSM road graph",
+  "policy_scope": "frozen validated SUMO-trained MAPPO evaluated out of domain; weights never updated",
+  "scalability_scope": "canonical M5 logical banks co-located at original OSM nodes",
+  "matched_cases": 192,
+  "episode_rows": 864,
+  "all_arms_share_snapshot_and_offers": true,
+  "two_ev_ablation": {
+    "rule_based": {
+      "cases": 96,
+      "mean_on_time_service": 0.435515873015873,
+      "mean_travel_wh": 1050.2916666666667,
+      "mean_charged_wh": 0.0,
+      "reached_95_percent": 0,
+      "mean_restricted_recovery_min": 22.0,
+      "offer_credit_cents": 16800,
+      "decision_ms": {
+        "mean": 0.17341770808343426,
+        "p50": 0.19459999748505652,
+        "p95": 0.2793000021483749,
+        "p99": 0.3618000046117231
+      },
+      "offer_ms": {
+        "mean": 1.659296874853074,
+        "p50": 1.9336999976076186,
+        "p95": 3.0746000120416284,
+        "p99": 4.387299995869398
+      },
+      "statuses": {
+        "selected": 96
+      },
+      "interventions": {
+        "rule_based": 96
+      },
+      "over_budget": 0,
+      "worker_statuses": {},
+      "mean_network_distance_m": 4612.280447916667
+    },
+    "mappo_alone": {
+      "cases": 96,
+      "mean_on_time_service": 0.435515873015873,
+      "mean_travel_wh": 1059.625,
+      "mean_charged_wh": 0.0,
+      "reached_95_percent": 0,
+      "mean_restricted_recovery_min": 22.0,
+      "offer_credit_cents": 16800,
+      "decision_ms": {
+        "mean": 1.3414010413725919,
+        "p50": 1.4238000003388152,
+        "p95": 2.155599999241531,
+        "p99": 3.560299999662675
+      },
+      "offer_ms": {
+        "mean": 1.659296874853074,
+        "p50": 1.9336999976076186,
+        "p95": 3.0746000120416284,
+        "p99": 4.387299995869398
+      },
+      "statuses": {
+        "selected": 96
+      },
+      "interventions": {
+        "continue_mappo": 96
+      },
+      "over_budget": 0,
+      "worker_statuses": {},
+      "mean_network_distance_m": 4653.25725
+    },
+    "mappo_agentic_supervisor": {
+      "cases": 96,
+      "mean_on_time_service": 0.435515873015873,
+      "mean_travel_wh": 1028.3229166666667,
+      "mean_charged_wh": 0.0,
+      "reached_95_percent": 0,
+      "mean_restricted_recovery_min": 22.0,
+      "offer_credit_cents": 16800,
+      "decision_ms": {
+        "mean": 461.26173437401485,
+        "p50": 448.44170000725427,
+        "p95": 567.1555999958807,
+        "p99": 678.263800005348
+      },
+      "offer_ms": {
+        "mean": 1.659296874853074,
+        "p50": 1.9336999976076186,
+        "p95": 3.0746000120416284,
+        "p99": 4.387299995869398
+      },
+      "statuses": {
+        "selected": 96
+      },
+      "interventions": {
+        "continue_mappo": 67,
+        "route_repair": 29
+      },
+      "over_budget": 0,
+      "worker_statuses": {
+        "completed": 96
+      },
+      "mean_network_distance_m": 4516.925447916667
+    },
+    "mappo_deterministic_supervisor": {
+      "cases": 96,
+      "mean_on_time_service": 0.435515873015873,
+      "mean_travel_wh": 1002.28125,
+      "mean_charged_wh": 0.0,
+      "reached_95_percent": 0,
+      "mean_restricted_recovery_min": 22.0,
+      "offer_credit_cents": 16800,
+      "decision_ms": {
+        "mean": 21.6452958323482,
+        "p50": 19.921600005666168,
+        "p95": 50.153099995331466,
+        "p99": 126.78759999826904
+      },
+      "offer_ms": {
+        "mean": 1.659296874853074,
+        "p50": 1.9336999976076186,
+        "p95": 3.0746000120416284,
+        "p99": 4.387299995869398
+      },
+      "statuses": {
+        "selected": 96
+      },
+      "interventions": {
+        "continue_mappo": 59,
+        "route_repair": 37
+      },
+      "over_budget": 0,
+      "worker_statuses": {},
+      "mean_network_distance_m": 4402.059270833333
+    },
+    "mappo_m4_agentic_supervisor": {
+      "cases": 96,
+      "mean_on_time_service": 0.435515873015873,
+      "mean_travel_wh": 1033.4166666666667,
+      "mean_charged_wh": 0.0,
+      "reached_95_percent": 0,
+      "mean_restricted_recovery_min": 22.0,
+      "offer_credit_cents": 16800,
+      "decision_ms": {
+        "mean": 1326.6329718740149,
+        "p50": 1155.0260000086953,
+        "p95": 2720.951199995384,
+        "p99": 3261.337699999393
+      },
+      "offer_ms": {
+        "mean": 1.659296874853074,
+        "p50": 1.9336999976076186,
+        "p95": 3.0746000120416284,
+        "p99": 4.387299995869398
+      },
+      "statuses": {
+        "selected": 80,
+        "timeout": 16
+      },
+      "interventions": {
+        "continue_mappo": 56,
+        "route_repair": 40
+      },
+      "over_budget": 16,
+      "worker_statuses": {},
+      "mean_network_distance_m": 4539.270510416666
+    }
+  },
+  "paired_all_fleets": {
+    "mappo_minus_rule": {
+      "cases": 192,
+      "mean_served_difference": 0.0,
+      "wins": 0,
+      "ties": 192,
+      "losses": 0
+    },
+    "deterministic_repair_supervisor_minus_mappo": {
+      "cases": 192,
+      "mean_served_difference": 0.0,
+      "wins": 0,
+      "ties": 192,
+      "losses": 0
+    },
+    "m5_agentic_minus_deterministic": {
+      "cases": 192,
+      "mean_served_difference": 0.0,
+      "wins": 0,
+      "ties": 192,
+      "losses": 0
+    },
+    "m4_agentic_minus_deterministic_two_ev": {
+      "cases": 96,
+      "mean_served_difference": 0.0,
+      "wins": 0,
+      "ties": 96,
+      "losses": 0
+    }
+  },
+  "scalability": {
+    "2": {
+      "rule_based": {
+        "cases": 48,
+        "mean_on_time_service": 0.43377976190476186,
+        "mean_travel_wh": 1055.0833333333333,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 7600,
+        "decision_ms": {
+          "mean": 0.17307708306664912,
+          "p50": 0.18269999418407679,
+          "p95": 0.2919999969890341,
+          "p99": 0.3618000046117231
+        },
+        "offer_ms": {
+          "mean": 1.7505708331858234,
+          "p50": 2.212799998233095,
+          "p95": 2.897900005336851,
+          "p99": 3.3426000009058043
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "rule_based": 48
+        },
+        "over_budget": 0,
+        "worker_statuses": {},
+        "mean_network_distance_m": 4634.102541666666
+      },
+      "mappo_alone": {
+        "cases": 48,
+        "mean_on_time_service": 0.43377976190476186,
+        "mean_travel_wh": 1065.0208333333333,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 7600,
+        "decision_ms": {
+          "mean": 1.3196395830163965,
+          "p50": 1.3924999948358163,
+          "p95": 2.1341999963624403,
+          "p99": 2.573099991423078
+        },
+        "offer_ms": {
+          "mean": 1.7505708331858234,
+          "p50": 2.212799998233095,
+          "p95": 2.897900005336851,
+          "p99": 3.3426000009058043
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "continue_mappo": 48
+        },
+        "over_budget": 0,
+        "worker_statuses": {},
+        "mean_network_distance_m": 4677.149166666667
+      },
+      "mappo_agentic_supervisor": {
+        "cases": 48,
+        "mean_on_time_service": 0.43377976190476186,
+        "mean_travel_wh": 1031.3958333333333,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 7600,
+        "decision_ms": {
+          "mean": 455.7984499992333,
+          "p50": 438.85000000555215,
+          "p95": 567.1555999958807,
+          "p99": 594.2834999936409
+        },
+        "offer_ms": {
+          "mean": 1.7505708331858234,
+          "p50": 2.212799998233095,
+          "p95": 2.897900005336851,
+          "p99": 3.3426000009058043
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "continue_mappo": 34,
+          "route_repair": 14
+        },
+        "over_budget": 0,
+        "worker_statuses": {
+          "completed": 48
+        },
+        "mean_network_distance_m": 4530.400416666666
+      },
+      "mappo_deterministic_supervisor": {
+        "cases": 48,
+        "mean_on_time_service": 0.43377976190476186,
+        "mean_travel_wh": 996.2291666666666,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 7600,
+        "decision_ms": {
+          "mean": 19.958924999233307,
+          "p50": 19.65219999588076,
+          "p95": 40.6237999975428,
+          "p99": 60.37110000085588
+        },
+        "offer_ms": {
+          "mean": 1.7505708331858234,
+          "p50": 2.212799998233095,
+          "p95": 2.897900005336851,
+          "p99": 3.3426000009058043
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "continue_mappo": 31,
+          "route_repair": 17
+        },
+        "over_budget": 0,
+        "worker_statuses": {},
+        "mean_network_distance_m": 4375.481020833334
+      }
+    },
+    "4": {
+      "rule_based": {
+        "cases": 48,
+        "mean_on_time_service": 0.4410962301587302,
+        "mean_travel_wh": 2132.6875,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 15200,
+        "decision_ms": {
+          "mean": 0.2994333329600825,
+          "p50": 0.3226999979233369,
+          "p95": 0.48519999836571515,
+          "p99": 0.7073000015225261
+        },
+        "offer_ms": {
+          "mean": 2.7090916664747056,
+          "p50": 3.529199995682575,
+          "p95": 4.94329999492038,
+          "p99": 5.276299998513423
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "rule_based": 48
+        },
+        "over_budget": 0,
+        "worker_statuses": {},
+        "mean_network_distance_m": 9367.19075
+      },
+      "mappo_alone": {
+        "cases": 48,
+        "mean_on_time_service": 0.4410962301587302,
+        "mean_travel_wh": 2152.5625,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 15200,
+        "decision_ms": {
+          "mean": 2.341777081710461,
+          "p50": 2.492800005711615,
+          "p95": 3.8493000029120594,
+          "p99": 3.9302999939536676
+        },
+        "offer_ms": {
+          "mean": 2.7090916664747056,
+          "p50": 3.529199995682575,
+          "p95": 4.94329999492038,
+          "p99": 5.276299998513423
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "continue_mappo": 48
+        },
+        "over_budget": 0,
+        "worker_statuses": {},
+        "mean_network_distance_m": 9453.284
+      },
+      "mappo_agentic_supervisor": {
+        "cases": 48,
+        "mean_on_time_service": 0.4410962301587302,
+        "mean_travel_wh": 2104.6666666666665,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 15200,
+        "decision_ms": {
+          "mean": 510.4068937484092,
+          "p50": 500.2580000054931,
+          "p95": 654.0599000063797,
+          "p99": 693.649800002731
+        },
+        "offer_ms": {
+          "mean": 2.7090916664747056,
+          "p50": 3.529199995682575,
+          "p95": 4.94329999492038,
+          "p99": 5.276299998513423
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "continue_mappo": 38,
+          "route_repair": 10
+        },
+        "over_budget": 0,
+        "worker_statuses": {
+          "completed": 48
+        },
+        "mean_network_distance_m": 9243.8624375
+      },
+      "mappo_deterministic_supervisor": {
+        "cases": 48,
+        "mean_on_time_service": 0.4410962301587302,
+        "mean_travel_wh": 2016.2291666666667,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 15200,
+        "decision_ms": {
+          "mean": 54.954337498409195,
+          "p50": 54.97520000004992,
+          "p95": 171.48899999657647,
+          "p99": 192.676900002731
+        },
+        "offer_ms": {
+          "mean": 2.7090916664747056,
+          "p50": 3.529199995682575,
+          "p95": 4.94329999492038,
+          "p99": 5.276299998513423
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "route_repair": 22,
+          "continue_mappo": 26
+        },
+        "over_budget": 0,
+        "worker_statuses": {},
+        "mean_network_distance_m": 8855.8080625
+      }
+    },
+    "8": {
+      "rule_based": {
+        "cases": 48,
+        "mean_on_time_service": 0.4435143849206349,
+        "mean_travel_wh": 4260.104166666667,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 31800,
+        "decision_ms": {
+          "mean": 0.5612208330300442,
+          "p50": 0.6260999944061041,
+          "p95": 1.0562999959802255,
+          "p99": 1.1910999892279506
+        },
+        "offer_ms": {
+          "mean": 4.157404168230035,
+          "p50": 4.0643999964231625,
+          "p95": 7.9615000140620396,
+          "p99": 9.722300004796125
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "rule_based": 48
+        },
+        "over_budget": 0,
+        "worker_statuses": {},
+        "mean_network_distance_m": 18711.260145833334
+      },
+      "mappo_alone": {
+        "cases": 48,
+        "mean_on_time_service": 0.4435143849206349,
+        "mean_travel_wh": 4313.75,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 31800,
+        "decision_ms": {
+          "mean": 4.228756249176513,
+          "p50": 4.82410000404343,
+          "p95": 7.181900000432506,
+          "p99": 8.03779999841936
+        },
+        "offer_ms": {
+          "mean": 4.157404168230035,
+          "p50": 4.0643999964231625,
+          "p95": 7.9615000140620396,
+          "p99": 9.722300004796125
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "continue_mappo": 48
+        },
+        "over_budget": 0,
+        "worker_statuses": {},
+        "mean_network_distance_m": 18942.852708333336
+      },
+      "mappo_agentic_supervisor": {
+        "cases": 48,
+        "mean_on_time_service": 0.4435143849206349,
+        "mean_travel_wh": 4152.479166666667,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 31800,
+        "decision_ms": {
+          "mean": 629.810545832719,
+          "p50": 603.4665999999775,
+          "p95": 943.7763000058275,
+          "p99": 1012.5752999929392
+        },
+        "offer_ms": {
+          "mean": 4.157404168230035,
+          "p50": 4.0643999964231625,
+          "p95": 7.9615000140620396,
+          "p99": 9.722300004796125
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "continue_mappo": 32,
+          "route_repair": 16
+        },
+        "over_budget": 0,
+        "worker_statuses": {
+          "completed": 48
+        },
+        "mean_network_distance_m": 18235.67604166667
+      },
+      "mappo_deterministic_supervisor": {
+        "cases": 48,
+        "mean_on_time_service": 0.4435143849206349,
+        "mean_travel_wh": 4064.5625,
+        "mean_charged_wh": 0.0,
+        "reached_95_percent": 0,
+        "mean_restricted_recovery_min": 22.0,
+        "offer_credit_cents": 31800,
+        "decision_ms": {
+          "mean": 174.56591041605228,
+          "p50": 168.90220000441036,
+          "p95": 417.6508999998547,
+          "p99": 434.33800000320076
+        },
+        "offer_ms": {
+          "mean": 4.157404168230035,
+          "p50": 4.0643999964231625,
+          "p95": 7.9615000140620396,
+          "p99": 9.722300004796125
+        },
+        "statuses": {
+          "selected": 48
+        },
+        "interventions": {
+          "route_repair": 29,
+          "continue_mappo": 19
+        },
+        "over_budget": 0,
+        "worker_statuses": {},
+        "mean_network_distance_m": 17852.9833125
+      }
+    }
+  },
+  "m5_canonical_summary": {
+    "matched_cases": 192,
+    "episode_rows": 576,
+    "ablation": {
+      "cases_per_arm": 96,
+      "traffic_seeds": 4,
+      "by_arm": {
+        "mappo_alone": {
+          "cases": 96,
+          "mean_on_time_service": 0.435515873015873,
+          "mean_travel_wh": 1059.625,
+          "mean_charged_wh": 0.0,
+          "reached_95_percent": 0,
+          "mean_restricted_recovery_min": 22.0,
+          "offer_credit_cents": 16800,
+          "decision_ms": {
+            "mean": 1.3414010413725919,
+            "p50": 1.4238000003388152,
+            "p95": 2.155599999241531,
+            "p99": 3.560299999662675
+          },
+          "offer_ms": {
+            "mean": 1.659296874853074,
+            "p50": 1.9336999976076186,
+            "p95": 3.0746000120416284,
+            "p99": 4.387299995869398
+          },
+          "statuses": {
+            "selected": 96
+          },
+          "interventions": {
+            "continue_mappo": 96
+          },
+          "over_budget": 0,
+          "worker_statuses": {}
+        },
+        "mappo_agentic_supervisor": {
+          "cases": 96,
+          "mean_on_time_service": 0.435515873015873,
+          "mean_travel_wh": 1028.3229166666667,
+          "mean_charged_wh": 0.0,
+          "reached_95_percent": 0,
+          "mean_restricted_recovery_min": 22.0,
+          "offer_credit_cents": 16800,
+          "decision_ms": {
+            "mean": 461.26173437401485,
+            "p50": 448.44170000725427,
+            "p95": 567.1555999958807,
+            "p99": 678.263800005348
+          },
+          "offer_ms": {
+            "mean": 1.659296874853074,
+            "p50": 1.9336999976076186,
+            "p95": 3.0746000120416284,
+            "p99": 4.387299995869398
+          },
+          "statuses": {
+            "selected": 96
+          },
+          "interventions": {
+            "continue_mappo": 67,
+            "route_repair": 29
+          },
+          "over_budget": 0,
+          "worker_statuses": {
+            "completed": 96
+          }
+        },
+        "mappo_deterministic_supervisor": {
+          "cases": 96,
+          "mean_on_time_service": 0.435515873015873,
+          "mean_travel_wh": 1002.28125,
+          "mean_charged_wh": 0.0,
+          "reached_95_percent": 0,
+          "mean_restricted_recovery_min": 22.0,
+          "offer_credit_cents": 16800,
+          "decision_ms": {
+            "mean": 21.6452958323482,
+            "p50": 19.921600005666168,
+            "p95": 50.153099995331466,
+            "p99": 126.78759999826904
+          },
+          "offer_ms": {
+            "mean": 1.659296874853074,
+            "p50": 1.9336999976076186,
+            "p95": 3.0746000120416284,
+            "p99": 4.387299995869398
+          },
+          "statuses": {
+            "selected": 96
+          },
+          "interventions": {
+            "continue_mappo": 59,
+            "route_repair": 37
+          },
+          "over_budget": 0,
+          "worker_statuses": {}
+        }
+      },
+      "paired": {
+        "agentic_vs_mappo": {
+          "service_change_pp": 0.0,
+          "better": 0,
+          "tie": 96,
+          "worse": 0,
+          "traffic_seed_cluster_bootstrap_95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "deterministic_vs_mappo": {
+          "service_change_pp": 0.0,
+          "better": 0,
+          "tie": 96,
+          "worse": 0,
+          "traffic_seed_cluster_bootstrap_95_pp": [
+            0.0,
+            0.0
+          ]
+        },
+        "agentic_vs_deterministic": {
+          "service_change_pp": 0.0,
+          "better": 0,
+          "tie": 96,
+          "worse": 0,
+          "traffic_seed_cluster_bootstrap_95_pp": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "by_chaos_kind": {
+      "locker_outage": {
+        "cases_per_arm": 16,
+        "traffic_seeds": 4,
+        "by_arm": {
+          "mappo_alone": {
+            "cases": 16,
+            "mean_on_time_service": 0.7083333333333334,
+            "mean_travel_wh": 1569.5625,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4000,
+            "decision_ms": {
+              "mean": 1.8154999988837517,
+              "p50": 1.6553000023122877,
+              "p95": 2.6036999915959314,
+              "p99": 2.6036999915959314
+            },
+            "offer_ms": {
+              "mean": 2.532237498598988,
+              "p50": 2.369699999690056,
+              "p95": 4.387299995869398,
+              "p99": 4.387299995869398
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          },
+          "mappo_agentic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.7083333333333334,
+            "mean_travel_wh": 1548.3125,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4000,
+            "decision_ms": {
+              "mean": 494.3586687501239,
+              "p50": 473.80950000962036,
+              "p95": 678.263800005348,
+              "p99": 678.263800005348
+            },
+            "offer_ms": {
+              "mean": 2.532237498598988,
+              "p50": 2.369699999690056,
+              "p95": 4.387299995869398,
+              "p99": 4.387299995869398
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 11,
+              "route_repair": 5
+            },
+            "over_budget": 0,
+            "worker_statuses": {
+              "completed": 16
+            }
+          },
+          "mappo_deterministic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.7083333333333334,
+            "mean_travel_wh": 1538.8125,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4000,
+            "decision_ms": {
+              "mean": 29.97938750012395,
+              "p50": 23.47929999306537,
+              "p95": 69.66590000534802,
+              "p99": 69.66590000534802
+            },
+            "offer_ms": {
+              "mean": 2.532237498598988,
+              "p50": 2.369699999690056,
+              "p95": 4.387299995869398,
+              "p99": 4.387299995869398
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 10,
+              "route_repair": 6
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          }
+        },
+        "paired": {
+          "agentic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "deterministic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "agentic_vs_deterministic": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          }
+        }
+      },
+      "locker_saturation": {
+        "cases_per_arm": 16,
+        "traffic_seeds": 4,
+        "by_arm": {
+          "mappo_alone": {
+            "cases": 16,
+            "mean_on_time_service": 0.5520833333333333,
+            "mean_travel_wh": 1294.8125,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4200,
+            "decision_ms": {
+              "mean": 1.4738249983565765,
+              "p50": 1.4106000016909093,
+              "p95": 2.1341999963624403,
+              "p99": 2.1341999963624403
+            },
+            "offer_ms": {
+              "mean": 2.1659375006493065,
+              "p50": 2.0857000054093078,
+              "p95": 3.3426000009058043,
+              "p99": 3.3426000009058043
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          },
+          "mappo_agentic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.5520833333333333,
+            "mean_travel_wh": 1298.75,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4200,
+            "decision_ms": {
+              "mean": 465.4035562486078,
+              "p50": 452.9405999987263,
+              "p95": 585.6894999991938,
+              "p99": 585.6894999991938
+            },
+            "offer_ms": {
+              "mean": 2.1659375006493065,
+              "p50": 2.0857000054093078,
+              "p95": 3.3426000009058043,
+              "p99": 3.3426000009058043
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 12,
+              "route_repair": 4
+            },
+            "over_budget": 0,
+            "worker_statuses": {
+              "completed": 16
+            }
+          },
+          "mappo_deterministic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.5520833333333333,
+            "mean_travel_wh": 1265.25,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4200,
+            "decision_ms": {
+              "mean": 19.830631248607812,
+              "p50": 16.095699999193847,
+              "p95": 40.925900002502274,
+              "p99": 40.925900002502274
+            },
+            "offer_ms": {
+              "mean": 2.1659375006493065,
+              "p50": 2.0857000054093078,
+              "p95": 3.3426000009058043,
+              "p99": 3.3426000009058043
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 11,
+              "route_repair": 5
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          }
+        },
+        "paired": {
+          "agentic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "deterministic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "agentic_vs_deterministic": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          }
+        }
+      },
+      "charger_outage": {
+        "cases_per_arm": 16,
+        "traffic_seeds": 4,
+        "by_arm": {
+          "mappo_alone": {
+            "cases": 16,
+            "mean_on_time_service": 0.0,
+            "mean_travel_wh": 95.0,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 0,
+            "decision_ms": {
+              "mean": 0.6969249998292071,
+              "p50": 0.6511999963549897,
+              "p95": 1.1481999972602352,
+              "p99": 1.1481999972602352
+            },
+            "offer_ms": {
+              "mean": 0.3131374978693202,
+              "p50": 0.30640000477433205,
+              "p95": 0.3789999900618568,
+              "p99": 0.3789999900618568
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          },
+          "mappo_agentic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.0,
+            "mean_travel_wh": 95.0,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 0,
+            "decision_ms": {
+              "mean": 423.0807562499954,
+              "p50": 419.6263000013072,
+              "p95": 466.7238000016194,
+              "p99": 466.7238000016194
+            },
+            "offer_ms": {
+              "mean": 0.3131374978693202,
+              "p50": 0.30640000477433205,
+              "p95": 0.3789999900618568,
+              "p99": 0.3789999900618568
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {
+              "completed": 16
+            }
+          },
+          "mappo_deterministic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.0,
+            "mean_travel_wh": 95.0,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 0,
+            "decision_ms": {
+              "mean": 4.66034999999539,
+              "p50": 4.383900001819618,
+              "p95": 5.975600000569969,
+              "p99": 5.975600000569969
+            },
+            "offer_ms": {
+              "mean": 0.3131374978693202,
+              "p50": 0.30640000477433205,
+              "p95": 0.3789999900618568,
+              "p99": 0.3789999900618568
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          }
+        },
+        "paired": {
+          "agentic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "deterministic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "agentic_vs_deterministic": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          }
+        }
+      },
+      "road_blockage": {
+        "cases_per_arm": 16,
+        "traffic_seeds": 4,
+        "by_arm": {
+          "mappo_alone": {
+            "cases": 16,
+            "mean_on_time_service": 0.71875,
+            "mean_travel_wh": 1684.9375,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4200,
+            "decision_ms": {
+              "mean": 1.615406249584339,
+              "p50": 1.5419000119436532,
+              "p95": 1.9160000083502382,
+              "p99": 1.9160000083502382
+            },
+            "offer_ms": {
+              "mean": 2.323475001503539,
+              "p50": 2.3376999888569117,
+              "p95": 3.2638999982737005,
+              "p99": 3.2638999982737005
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          },
+          "mappo_agentic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.71875,
+            "mean_travel_wh": 1588.25,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4200,
+            "decision_ms": {
+              "mean": 469.05586874875354,
+              "p50": 457.28419999505337,
+              "p95": 547.7443999962717,
+              "p99": 547.7443999962717
+            },
+            "offer_ms": {
+              "mean": 2.323475001503539,
+              "p50": 2.3376999888569117,
+              "p95": 3.2638999982737005,
+              "p99": 3.2638999982737005
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "route_repair": 11,
+              "continue_mappo": 5
+            },
+            "over_budget": 0,
+            "worker_statuses": {
+              "completed": 16
+            }
+          },
+          "mappo_deterministic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.71875,
+            "mean_travel_wh": 1584.9375,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4200,
+            "decision_ms": {
+              "mean": 25.46331249875354,
+              "p50": 24.084800002122112,
+              "p95": 40.6237999975428,
+              "p99": 40.6237999975428
+            },
+            "offer_ms": {
+              "mean": 2.323475001503539,
+              "p50": 2.3376999888569117,
+              "p95": 3.2638999982737005,
+              "p99": 3.2638999982737005
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "route_repair": 12,
+              "continue_mappo": 4
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          }
+        },
+        "paired": {
+          "agentic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "deterministic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "agentic_vs_deterministic": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          }
+        }
+      },
+      "demand_surge": {
+        "cases_per_arm": 16,
+        "traffic_seeds": 4,
+        "by_arm": {
+          "mappo_alone": {
+            "cases": 16,
+            "mean_on_time_service": 0.6339285714285714,
+            "mean_travel_wh": 1618.4375,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4400,
+            "decision_ms": {
+              "mean": 1.7725687512211152,
+              "p50": 1.6921000060392544,
+              "p95": 3.560299999662675,
+              "p99": 3.560299999662675
+            },
+            "offer_ms": {
+              "mean": 2.2903312483322225,
+              "p50": 2.295899990713224,
+              "p95": 2.8011999966111034,
+              "p99": 2.8011999966111034
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          },
+          "mappo_agentic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.6339285714285714,
+            "mean_travel_wh": 1544.625,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4400,
+            "decision_ms": {
+              "mean": 479.675774998427,
+              "p50": 466.34469999533144,
+              "p95": 594.2834999936409,
+              "p99": 594.2834999936409
+            },
+            "offer_ms": {
+              "mean": 2.2903312483322225,
+              "p50": 2.295899990713224,
+              "p95": 2.8011999966111034,
+              "p99": 2.8011999966111034
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 7,
+              "route_repair": 9
+            },
+            "over_budget": 0,
+            "worker_statuses": {
+              "completed": 16
+            }
+          },
+          "mappo_deterministic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.6339285714285714,
+            "mean_travel_wh": 1434.6875,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 4400,
+            "decision_ms": {
+              "mean": 45.199187498426994,
+              "p50": 32.8829999965692,
+              "p95": 126.78759999826904,
+              "p99": 126.78759999826904
+            },
+            "offer_ms": {
+              "mean": 2.2903312483322225,
+              "p50": 2.295899990713224,
+              "p95": 2.8011999966111034,
+              "p99": 2.8011999966111034
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "route_repair": 14,
+              "continue_mappo": 2
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          }
+        },
+        "paired": {
+          "agentic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "deterministic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "agentic_vs_deterministic": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          }
+        }
+      },
+      "compound": {
+        "cases_per_arm": 16,
+        "traffic_seeds": 4,
+        "by_arm": {
+          "mappo_alone": {
+            "cases": 16,
+            "mean_on_time_service": 0.0,
+            "mean_travel_wh": 95.0,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 0,
+            "decision_ms": {
+              "mean": 0.6741812503605615,
+              "p50": 0.6189999985508621,
+              "p95": 1.0316999978385866,
+              "p99": 1.0316999978385866
+            },
+            "offer_ms": {
+              "mean": 0.3306625021650689,
+              "p50": 0.32479999936185777,
+              "p95": 0.4234000080032274,
+              "p99": 0.4234000080032274
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          },
+          "mappo_agentic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.0,
+            "mean_travel_wh": 95.0,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 0,
+            "decision_ms": {
+              "mean": 435.9957812481815,
+              "p50": 423.6859999881733,
+              "p95": 580.0894999918627,
+              "p99": 580.0894999918627
+            },
+            "offer_ms": {
+              "mean": 0.3306625021650689,
+              "p50": 0.32479999936185777,
+              "p95": 0.4234000080032274,
+              "p99": 0.4234000080032274
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {
+              "completed": 16
+            }
+          },
+          "mappo_deterministic_supervisor": {
+            "cases": 16,
+            "mean_on_time_service": 0.0,
+            "mean_travel_wh": 95.0,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 0,
+            "decision_ms": {
+              "mean": 4.7389062481815225,
+              "p50": 4.436999998685345,
+              "p95": 6.2681000049777325,
+              "p99": 6.2681000049777325
+            },
+            "offer_ms": {
+              "mean": 0.3306625021650689,
+              "p50": 0.32479999936185777,
+              "p95": 0.4234000080032274,
+              "p99": 0.4234000080032274
+            },
+            "statuses": {
+              "selected": 16
+            },
+            "interventions": {
+              "continue_mappo": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          }
+        },
+        "paired": {
+          "agentic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "deterministic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          },
+          "agentic_vs_deterministic": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 16,
+            "worse": 0
+          }
+        }
+      }
+    },
+    "scalability": {
+      "2": {
+        "cases_per_arm": 48,
+        "traffic_seeds": 2,
+        "by_arm": {
+          "mappo_alone": {
+            "cases": 48,
+            "mean_on_time_service": 0.43377976190476186,
+            "mean_travel_wh": 1065.0208333333333,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 7600,
+            "decision_ms": {
+              "mean": 1.3196395830163965,
+              "p50": 1.3924999948358163,
+              "p95": 2.1341999963624403,
+              "p99": 2.573099991423078
+            },
+            "offer_ms": {
+              "mean": 1.7505708331858234,
+              "p50": 2.212799998233095,
+              "p95": 2.897900005336851,
+              "p99": 3.3426000009058043
+            },
+            "statuses": {
+              "selected": 48
+            },
+            "interventions": {
+              "continue_mappo": 48
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          },
+          "mappo_agentic_supervisor": {
+            "cases": 48,
+            "mean_on_time_service": 0.43377976190476186,
+            "mean_travel_wh": 1031.3958333333333,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 7600,
+            "decision_ms": {
+              "mean": 455.7984499992333,
+              "p50": 438.85000000555215,
+              "p95": 567.1555999958807,
+              "p99": 594.2834999936409
+            },
+            "offer_ms": {
+              "mean": 1.7505708331858234,
+              "p50": 2.212799998233095,
+              "p95": 2.897900005336851,
+              "p99": 3.3426000009058043
+            },
+            "statuses": {
+              "selected": 48
+            },
+            "interventions": {
+              "continue_mappo": 34,
+              "route_repair": 14
+            },
+            "over_budget": 0,
+            "worker_statuses": {
+              "completed": 48
+            }
+          },
+          "mappo_deterministic_supervisor": {
+            "cases": 48,
+            "mean_on_time_service": 0.43377976190476186,
+            "mean_travel_wh": 996.2291666666666,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 7600,
+            "decision_ms": {
+              "mean": 19.958924999233307,
+              "p50": 19.65219999588076,
+              "p95": 40.6237999975428,
+              "p99": 60.37110000085588
+            },
+            "offer_ms": {
+              "mean": 1.7505708331858234,
+              "p50": 2.212799998233095,
+              "p95": 2.897900005336851,
+              "p99": 3.3426000009058043
+            },
+            "statuses": {
+              "selected": 48
+            },
+            "interventions": {
+              "continue_mappo": 31,
+              "route_repair": 17
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          }
+        },
+        "paired": {
+          "agentic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 48,
+            "worse": 0
+          },
+          "deterministic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 48,
+            "worse": 0
+          },
+          "agentic_vs_deterministic": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 48,
+            "worse": 0
+          }
+        }
+      },
+      "4": {
+        "cases_per_arm": 48,
+        "traffic_seeds": 2,
+        "by_arm": {
+          "mappo_alone": {
+            "cases": 48,
+            "mean_on_time_service": 0.4410962301587302,
+            "mean_travel_wh": 2152.5625,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 15200,
+            "decision_ms": {
+              "mean": 2.341777081710461,
+              "p50": 2.492800005711615,
+              "p95": 3.8493000029120594,
+              "p99": 3.9302999939536676
+            },
+            "offer_ms": {
+              "mean": 2.7090916664747056,
+              "p50": 3.529199995682575,
+              "p95": 4.94329999492038,
+              "p99": 5.276299998513423
+            },
+            "statuses": {
+              "selected": 48
+            },
+            "interventions": {
+              "continue_mappo": 48
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          },
+          "mappo_agentic_supervisor": {
+            "cases": 48,
+            "mean_on_time_service": 0.4410962301587302,
+            "mean_travel_wh": 2104.6666666666665,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 15200,
+            "decision_ms": {
+              "mean": 510.4068937484092,
+              "p50": 500.2580000054931,
+              "p95": 654.0599000063797,
+              "p99": 693.649800002731
+            },
+            "offer_ms": {
+              "mean": 2.7090916664747056,
+              "p50": 3.529199995682575,
+              "p95": 4.94329999492038,
+              "p99": 5.276299998513423
+            },
+            "statuses": {
+              "selected": 48
+            },
+            "interventions": {
+              "continue_mappo": 38,
+              "route_repair": 10
+            },
+            "over_budget": 0,
+            "worker_statuses": {
+              "completed": 48
+            }
+          },
+          "mappo_deterministic_supervisor": {
+            "cases": 48,
+            "mean_on_time_service": 0.4410962301587302,
+            "mean_travel_wh": 2016.2291666666667,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 15200,
+            "decision_ms": {
+              "mean": 54.954337498409195,
+              "p50": 54.97520000004992,
+              "p95": 171.48899999657647,
+              "p99": 192.676900002731
+            },
+            "offer_ms": {
+              "mean": 2.7090916664747056,
+              "p50": 3.529199995682575,
+              "p95": 4.94329999492038,
+              "p99": 5.276299998513423
+            },
+            "statuses": {
+              "selected": 48
+            },
+            "interventions": {
+              "route_repair": 22,
+              "continue_mappo": 26
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          }
+        },
+        "paired": {
+          "agentic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 48,
+            "worse": 0
+          },
+          "deterministic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 48,
+            "worse": 0
+          },
+          "agentic_vs_deterministic": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 48,
+            "worse": 0
+          }
+        }
+      },
+      "8": {
+        "cases_per_arm": 48,
+        "traffic_seeds": 2,
+        "by_arm": {
+          "mappo_alone": {
+            "cases": 48,
+            "mean_on_time_service": 0.4435143849206349,
+            "mean_travel_wh": 4313.75,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 31800,
+            "decision_ms": {
+              "mean": 4.228756249176513,
+              "p50": 4.82410000404343,
+              "p95": 7.181900000432506,
+              "p99": 8.03779999841936
+            },
+            "offer_ms": {
+              "mean": 4.157404168230035,
+              "p50": 4.0643999964231625,
+              "p95": 7.9615000140620396,
+              "p99": 9.722300004796125
+            },
+            "statuses": {
+              "selected": 48
+            },
+            "interventions": {
+              "continue_mappo": 48
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          },
+          "mappo_agentic_supervisor": {
+            "cases": 48,
+            "mean_on_time_service": 0.4435143849206349,
+            "mean_travel_wh": 4152.479166666667,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 31800,
+            "decision_ms": {
+              "mean": 629.810545832719,
+              "p50": 603.4665999999775,
+              "p95": 943.7763000058275,
+              "p99": 1012.5752999929392
+            },
+            "offer_ms": {
+              "mean": 4.157404168230035,
+              "p50": 4.0643999964231625,
+              "p95": 7.9615000140620396,
+              "p99": 9.722300004796125
+            },
+            "statuses": {
+              "selected": 48
+            },
+            "interventions": {
+              "continue_mappo": 32,
+              "route_repair": 16
+            },
+            "over_budget": 0,
+            "worker_statuses": {
+              "completed": 48
+            }
+          },
+          "mappo_deterministic_supervisor": {
+            "cases": 48,
+            "mean_on_time_service": 0.4435143849206349,
+            "mean_travel_wh": 4064.5625,
+            "mean_charged_wh": 0.0,
+            "reached_95_percent": 0,
+            "mean_restricted_recovery_min": 22.0,
+            "offer_credit_cents": 31800,
+            "decision_ms": {
+              "mean": 174.56591041605228,
+              "p50": 168.90220000441036,
+              "p95": 417.6508999998547,
+              "p99": 434.33800000320076
+            },
+            "offer_ms": {
+              "mean": 4.157404168230035,
+              "p50": 4.0643999964231625,
+              "p95": 7.9615000140620396,
+              "p99": 9.722300004796125
+            },
+            "statuses": {
+              "selected": 48
+            },
+            "interventions": {
+              "route_repair": 29,
+              "continue_mappo": 19
+            },
+            "over_budget": 0,
+            "worker_statuses": {}
+          }
+        },
+        "paired": {
+          "agentic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 48,
+            "worse": 0
+          },
+          "deterministic_vs_mappo": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 48,
+            "worse": 0
+          },
+          "agentic_vs_deterministic": {
+            "service_change_pp": 0.0,
+            "better": 0,
+            "tie": 48,
+            "worse": 0
+          }
+        }
+      }
+    },
+    "repair_receipts_by_fleet": {
+      "2": {
+        "cp_sat:OPTIMAL": 96
+      },
+      "4": {
+        "cp_sat:OPTIMAL": 48
+      },
+      "8": {
+        "cp_sat:OPTIMAL": 41,
+        "cp_sat:UNKNOWN": 6,
+        "cp_sat:TIME_LIMIT": 1
+      }
+    },
+    "latency_boundary": "post-offer MAPPO rollout, optional certified menu construction, and selector"
+  },
+  "rule_rows": 192,
+  "m4_additional_rows": 96,
+  "latency_scope": "local warm model, matched offer generation separate, planning and selector included"
+}

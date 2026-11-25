@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "m2-opt-in-offers-v1",
+  "days": [181, 182, 183, 184, 185, 186, 187, 188],
+  "seeds": [31, 32, 33, 34, 35, 36],
+  "deadline_jitter_min": 2,
+  "traffic_delay_max_min": 2,
+  "delay_energy_wh_per_min": 60,
+  "conditions": [
+    {"id": "locker_outage", "locker_capacity_caps": {}, "extra_battery_above_direct_return_wh": null},
+    {"id": "alternate_capacity_pressure", "locker_capacity_caps": {"west": 2, "north": 1}, "extra_battery_above_direct_return_wh": null},
+    {"id": "low_battery_at_outage", "locker_capacity_caps": {}, "extra_battery_above_direct_return_wh": 390}
+  ],
+  "charger_rate_wh_per_min": 240,
+  "charger_capacity_wh": 2000,
+  "response_after_min": 1,
+  "offer_expiry_after_min": 2,
+  "fixed_credit_cents": 200,
+  "budget_cents": 400,
+  "fallback": {"mode": "deferred_home_delivery", "availability_after_alert_min": 35, "pickup_min": 0, "pickup_cost_cents": 0},
+  "locker_pickup": {
+    "east": {"pickup_min": 8, "pickup_cost_cents": 25},
+    "west": {"pickup_min": 12, "pickup_cost_cents": 0},
+    "north": {"pickup_min": 10, "pickup_cost_cents": 20}
+  },
+  "reference_profile": "reference",
+  "profiles": {
+    "lower_acceptance": {"intercept": -0.85, "money_sensitivity": 0.65, "pickup_minute_sensitivity": 0.09, "delay_minute_sensitivity": 0.02},
+    "reference": {"intercept": 0.0, "money_sensitivity": 0.65, "pickup_minute_sensitivity": 0.09, "delay_minute_sensitivity": 0.02},
+    "higher_acceptance": {"intercept": 0.85, "money_sensitivity": 0.65, "pickup_minute_sensitivity": 0.09, "delay_minute_sensitivity": 0.02}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "EcoAgent-Twin",
+  "upload_type": "software",
+  "description": "EcoAgent-Twin source and matched controller evidence on directed University Park streets. OpenStreetMap database artifacts carry the separate ODbL 1.0 license.",
+  "creators": [
+    {
+      "name": "Ejjanfi, Mohamed-Ali",
+      "affiliation": "LARILE, ENSEM, Université Hassan II de Casablanca"
+    }
+  ],
+  "version": "0.4.0",
+  "license": "mit",
+  "keywords": [
+    "last-mile delivery",
+    "parcel lockers",
+    "MAPPO",
+    "route repair"
+  ],
+  "access_right": "open",
+  "language": "eng"
+}

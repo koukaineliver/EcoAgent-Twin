@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "locker-outage-demo-v1",
+  "data_basis": "synthetic",
+  "depot": "depot",
+  "outage": {"time_min": 20, "locker_id": "central"},
+  "horizon_min": 42,
+  "service_min_per_parcel": 1,
+  "locker_free_capacity": {"central": 4, "east": 1, "west": 3, "north": 2},
+  "vehicles": [
+    {"id": "ev-1", "node": "start-1", "battery_wh": 2000, "reserve_wh": 500},
+    {"id": "ev-2", "node": "start-2", "battery_wh": 2000, "reserve_wh": 500}
+  ],
+  "parcels_in_original_plan_order": [
+    {"id": "P101", "vehicle_id": "ev-1", "original_locker": "central", "alternatives": ["east", "west"], "deadline_min": 26},
+    {"id": "P102", "vehicle_id": "ev-1", "original_locker": "north", "alternatives": [], "deadline_min": 34},
+    {"id": "P103", "vehicle_id": "ev-1", "original_locker": "central", "alternatives": ["west"], "deadline_min": 35},
+    {"id": "P201", "vehicle_id": "ev-2", "original_locker": "central", "alternatives": ["east"], "deadline_min": 32},
+    {"id": "P202", "vehicle_id": "ev-2", "original_locker": "west", "alternatives": [], "deadline_min": 36},
+    {"id": "P203", "vehicle_id": "ev-2", "original_locker": "north", "alternatives": [], "deadline_min": 34}
+  ],
+  "travel_minutes": {
+    "depot":   {"depot": 0, "central": 3, "east": 3, "west": 1, "north": 5, "start-1": 2, "start-2": 3},
+    "central": {"depot": 3, "central": 0, "east": 4, "west": 2, "north": 2, "start-1": 3, "start-2": 2},
+    "east":    {"depot": 3, "central": 4, "east": 0, "west": 4, "north": 4, "start-1": 1, "start-2": 6},
+    "west":    {"depot": 1, "central": 2, "east": 4, "west": 0, "north": 4, "start-1": 3, "start-2": 2},
+    "north":   {"depot": 5, "central": 2, "east": 4, "west": 4, "north": 0, "start-1": 3, "start-2": 2},
+    "start-1": {"depot": 2, "central": 3, "east": 1, "west": 3, "north": 3, "start-1": 0, "start-2": 5},
+    "start-2": {"depot": 3, "central": 2, "east": 6, "west": 2, "north": 2, "start-1": 5, "start-2": 0}
+  },
+  "travel_wh": {
+    "depot":   {"depot": 0,   "central": 180, "east": 180, "west": 60,  "north": 300, "start-1": 120, "start-2": 180},
+    "central": {"depot": 180, "central": 0,   "east": 240, "west": 120, "north": 120, "start-1": 180, "start-2": 120},
+    "east":    {"depot": 180, "central": 240, "east": 0,   "west": 240, "north": 240, "start-1": 60,  "start-2": 360},
+    "west":    {"depot": 60,  "central": 120, "east": 240, "west": 0,   "north": 240, "start-1": 180, "start-2": 120},
+    "north":   {"depot": 300, "central": 120, "east": 240, "west": 240, "north": 0,   "start-1": 180, "start-2": 120},
+    "start-1": {"depot": 120, "central": 180, "east": 60,  "west": 180, "north": 180, "start-1": 0,   "start-2": 300},
+    "start-2": {"depot": 180, "central": 120, "east": 360, "west": 120, "north": 120, "start-1": 300, "start-2": 0}
+  }
+}
